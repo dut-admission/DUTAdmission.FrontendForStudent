@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ngx-toastr/toastr.css";
+ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.backdrop[_ngcontent-c1] {
+    position: fixed !important;
+}
+.btn-add{
+    float: right;
+}
+.form-control-label,
+.form-control{
+    font-size: 1rem !important;
+}
