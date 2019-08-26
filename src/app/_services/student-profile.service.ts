@@ -64,7 +64,7 @@ export class StudentProfileService {
         return this.http.delete<any>(API_URL.STUDENT_DELETE_ACHIEVEMENT + id);
     }
 
-    saveProfile(profile: StudentInfo): Observable<any> {
+        saveProfile(profile: StudentInfo): Observable<any> {
         return this.http.put<any>(API_URL.PROFILE_SAVE_PROFILE, profile, httpOptions);
     }
 

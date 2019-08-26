@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  API_URI: 'https://dutadmission.azurewebsites.net/api'
+    production: false,
+    API_URI: 'https://dutadmission.azurewebsites.net/api'
 };
 
 /*
