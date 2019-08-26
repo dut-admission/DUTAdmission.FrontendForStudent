@@ -1,41 +1,47 @@
-<footer class="footer" [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
-  <div class="container container-lg" *ngIf="getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'">
-    <div class="row">
-      <div class="col-md-6 mb-5 mb-md-0">
-        <div class="card card-lift--hover shadow border-0">
-          <a [routerLink]="['/landing']" title="Landing Page">
-            <img src="./assets/img/theme/landing.jpg" class="card-img">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5 mb-lg-0">
-        <div class="card card-lift--hover shadow border-0">
-          <a [routerLink]="['/user-profile']" title="Profile Page">
-            <img src="./assets/img/theme/profile.jpg" class="card-img">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+<footer class="footer">
   <div class="container">
-    <div class="row row-grid align-items-center" [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
-      <div class="col-lg-6">
-        <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
-        <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
+    <hr/>
+    <div class="row" [ngClass]="{'my-md': getPath()!=='/user-studentInfo' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-studentInfo' || getPath()==='/register' || getPath()==='/login'}">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="single-footer-widget">
+          <h3>THÔNG TIN SINH VIÊN</h3>
+          <p>Website này phục vụ kê khai thông tin sinh viên trường Đại học Bách khoa Đà Nẵng.</p>
+          <!--
+          <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
+            <i class="fa fa-facebook-square"></i>
+          </a>
+          <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" ngbTooltip="Follow us">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a target="_blank" href="https://github.com/creativetimofficial" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
+            <i class="fa fa-github"></i>
+          </a>
+          <a target="_blank" href="https://github.com/creativetimofficial" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Youtube">
+            <i class="fa fa-youtube"></i>
+          </a>
+          -->
+        </div>
       </div>
-      <div class="col-lg-6 text-lg-center btn-wrapper">
-        <a target="_blank" href="https://twitter.com/creativetim" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
-          <i class="fa fa-facebook-square"></i>
-        </a>
-        <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" ngbTooltip="Follow us">
-          <i class="fa fa-dribbble"></i>
-        </a>
-        <a target="_blank" href="https://github.com/creativetimofficial" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
-          <i class="fa fa-github"></i>
-        </a>
+      <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="single-footer-widget">
+          <h3>THÔNG TIN LIÊN LẠC</h3>
+          <span><i class="fa fa-phone"></i>02363730123</span>
+          <span><i class="fa fa-envelope"></i>hc1csv@dut.udn.vn</span>
+          <span><i class="fa fa-map-marker"></i>54 Nguyễn Lương Bằng, Quận Liên Chiểu, Thành phố Đà Nẵng</span>
+        </div>
+      </div>
+      <div class="col-lg-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="single-footer-widget">
+          <h3>LIÊN KẾT NHANH</h3>
+          <ul class="footer-list">
+            <li><a class="text fast-link" routerLink="/home">Trang chủ</a></li>
+            <li><a class="text fast-link" href="/admission">Kê khai thông tin</a></li>
+            <li><a class="text fast-link" href="/about-us">Giới thiệu & Liên hệ</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <hr>
@@ -43,24 +49,8 @@
       <div class="col-md-6">
         <div class="copyright">
           &copy; {{test | date: 'yyyy'}}
-          <a href="https://www.creative-tim.com?ref=adsa-footer" target="_blank">Creative Tim</a>.
+          <a routerLink="/home" target="_blank">Bản quyền Trường Đại học Bách khoa - Đại học Đà Nẵng</a>.
         </div>
-      </div>
-      <div class="col-md-6">
-        <ul class="nav nav-footer justify-content-end">
-          <li class="nav-item">
-            <a href="https://www.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Creative Tim</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.creative-tim.com/presentation?ref=adsa-footer" class="nav-link" target="_blank">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a href="http://blog.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/creativetimofficial/argon-design-system-angular/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

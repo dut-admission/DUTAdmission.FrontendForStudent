@@ -1,3 +1,7 @@
+<ng-template #customLoadingTemplate>
+</ng-template>
+<ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

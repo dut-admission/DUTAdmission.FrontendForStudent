@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {User} from '../_entities/user';
 
 @Component({
     selector: 'app-landing',
@@ -9,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class LandingComponent implements OnInit {
   focus: any;
   focus1: any;
+    currentUserValue: User;
 
   constructor() { }
 
