@@ -25,7 +25,7 @@
     "html2canvas": "^1.0.0-rc.3",
     "jspdf": "^1.5.3",
     "jw-bootstrap-switch-ng2": "2.0.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "ng2-nouislider": "1.7.13",
     "ngx-loading": "^3.0.1",
     "ngx-print": "^1.2.0-beta.2",
